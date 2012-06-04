@@ -4,12 +4,10 @@
 ,"bin": { "stress": "./stress.js" }
 ,"description": "A stress tool for Hubiquitus written for node.js in javascript"
 ,"author": "Alexis Lesage"
-,"dependencies": {"node-expat": ">=1.4.1"
-		 ,"ltx": ">= 0.1.2"
-		 ,"tav": ">= 0.1.0"
-		 ,"jsdom": ">= 0.2.10"
-		 ,"underscore": ">= 1.1.5"
+,"dependencies": {
+		 "tav": ">= 0.1.0"
 		 ,"winston": ">= 0.5.9"
+         ,"hubiquitusjs": ">=0.3.0"
 		 }
 ,"homepage": "http://hubiquitus.com"
 ,"repository": {
@@ -19,11 +17,17 @@
 ,"maintainers": [{"name": "Alexis Lesage"
 		 ,"email":"alexis.lesage@gmail.com"
 		 ,"web": "http://alexislesage.com/"
-		 }]
+		 }
+        ,{"name": "Federico Wasserman"
+        ,"email":"wasserx@hotmail.com"
+        }]
 ,"contributors": [{"name":"Alexis Lesage"
 		  ,"email":"alexis.lesage@gmail.com"
 		  ,"url":"http://alexislesage.com/"
 		  }
+        ,{"name":"Federico Wasserman"
+        ,"email":"wasserx@hotmail.com"
+        }
 ]
 ,"licenses": [{"type": "GPL"}]
 ,"engines": {
