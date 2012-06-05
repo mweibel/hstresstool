@@ -27,6 +27,8 @@ var openedSessions = new Array();
 var hCallback = function(sessionNb, msg){
     if (msg.type == 'hStatus' && msg.data.status == hClient.status.CONNECTED)
         logger.info('Session #' + sessionNb + ' connected');
+    else if (msg.type == 'hStatus' && msg.data.status == hClient.status.DISCONNECTED)
+        logger.info('Session #' + sessionNb + ' disconnected');
 };
 
 /*
@@ -64,8 +66,8 @@ function main() {
             value: 2
         }
         ,interval: {
-            note: 'Time to wait before launching each session in ms (default:30)',
-            value: 30
+            note: 'Time to wait before launching each session in ms (default:10)',
+            value: 10
         }
         ,logfile: {
             note: 'File to save the log to (default: log.txt)',
@@ -75,7 +77,8 @@ function main() {
 
     var hOptions = {
         transport: 'socketio',
-        endpoints: [opts.endpoint]
+        endpoints: [opts.endpoint],
+        stress: true
     };
 
     logger.add(logger.transports.File, { filename: opts.logfile });
