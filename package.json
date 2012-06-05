@@ -7,7 +7,7 @@
 ,"dependencies": {
 		 "tav": ">= 0.1.0"
 		 ,"winston": ">= 0.5.9"
-         ,"hubiquitusjs": ">=0.3.0"
+         ,"hubiquitusjs": "=0.3.0"
 		 }
 ,"homepage": "http://hubiquitus.com"
 ,"repository": {
