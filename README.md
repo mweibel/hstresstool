@@ -3,7 +3,23 @@ A simple stress tool for the Hubiquitus Framework using nodeJS.
 
 ## How to Use
 
-TODO
+Simply Launch `stress.js` by passing the two mandatory parameters: username
+and password.
+
+```
+$ node stress --username=<username> --password=<password>
+```
+
+They are the login and password accepted by XMPP that will be used
+to establish the connections.
+
+The sessions quantity, interval to launch them and others
+can be also specified as parameters. For a full list of options
+run
+
+```
+$ node stress --help
+```
 
 ## License
 Copyright (c) Novedia Group 2012.
